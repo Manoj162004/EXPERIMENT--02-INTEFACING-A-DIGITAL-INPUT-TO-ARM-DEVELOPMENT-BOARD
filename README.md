@@ -66,9 +66,6 @@ bool pb;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 
-
-
-
 int main(void)
 {
  
@@ -104,7 +101,6 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
   
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
@@ -167,7 +163,6 @@ void assert_failed(uint8_t *file, uint32_t line)
     
 }
 #endif /* USE_FULL_ASSERT */
-
 ```
 
 ## Output  :
